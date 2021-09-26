@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "filpersonal": {
+      "main": "src/filpersonal/main.mo",
+      "type": "motoko"
+    },
+    "filpersonal_assets": {
+      "dependencies": [
+        "filpersonal"
+      ],
+      "frontend": {
+        "entrypoint": "src/filpersonal_assets/src/index.html"
+      },
+      "source": [
+        "src/filpersonal_assets/assets",
+        "dist/filpersonal_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.1",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
