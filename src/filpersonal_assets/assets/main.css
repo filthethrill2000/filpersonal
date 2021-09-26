@@ -17,6 +17,11 @@ section {
     align-items: baseline;
 }
 
+div {
+    text-align: center;
+    width: 100%;
+}
+
 #clickMeBtn {
     padding: 5px 20px;
     margin: 10px auto;
